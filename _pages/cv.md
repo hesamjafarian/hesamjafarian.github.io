@@ -11,25 +11,25 @@ redirect_from:
 
 ## Education
 **MSc. Telecommunication and Automation Informatics**  
-Tampere University, Finland (Aug 2015 – Mar 2019)  
+*Tampere University, Aug 2015 – Mar 2019 (Finland)*  
 Thesis Title: *ML Based Industrial Manufacturing*
 
 **BSc. Electrical and Computer Science**  
-*Qazvin University, Iran*  (Aug 2010 – Mar 2014)  
+*Qazvin University, Aug 2010 – Mar 2014 (Iran)*   
 Thesis Title: *Autonomous Guardian Robot for Crack Detection in Industrial Gas Pipelines*
 
 ## Work Experience
 **Nokia**  
 *Software Engineer (5G ML Engineer)*  
-**Aug 2022 – Jan 2024 (Finland)**
+*Aug 2022 – Jan 2024 (Finland)*
 
 **STEM SAS & Tampere University**  
 *Machine Learning Engineer*  
-**Mar 2019 – Mar 2022 (Finland & France)**
+*Mar 2019 – Mar 2022 (Finland & France)*
 
 **Tampere University**  
 *Machine Learning Engineer*  
-**Dec 2018 – Mar 2019 (Tampere, Finland)**
+*Dec 2018 – Mar 2019 (Tampere, Finland)*
 
 ## Awards and Honors
 - Finalist for Future Factory Design 2016, Helsinki
