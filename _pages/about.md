@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Machine Learning Engineer with over 5 years of extensive experience in research, end-to-end development and deployment of machine learning (Deep Learning and Reinforcement Learning) solutions by means of real and synthetic data generations. I bring a  foundation in cloud-based model deployment and autonomous systems designs (autonomous cars) deploying my expertise across various domains, such as communication systems, signal processing, and industrial robotics. As a multilingual who has a foundation of Swedish language, I am eager to work in Gothenburg and within an innovative tech scene as it is an ideal place to contribute to AI advancements.  
+Machine Learning Engineer with over 5 years of extensive experience in research, end-to-end development and deployment of machine learning (Deep Learning and Reinforcement Learning) solutions by means of real and synthetic data generations. I bring a  foundation in cloud-based model deployment and autonomous systems designs (autonomous cars) deploying my expertise across various domains, such as communication systems, signal processing, and industrial robotics.   
 
 ## Research interests
 * System identification
