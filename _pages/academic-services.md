@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Academic Services"
-permalink: /Academic Services/
+permalink: /Projects/
 author_profile: true
 redirect_from:
   - /resume
