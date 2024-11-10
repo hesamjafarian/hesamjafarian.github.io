@@ -11,12 +11,12 @@ redirect_from:
 
 ## Education
 **MSc. Telecommunication and Automation Informatics**  
-- *Tampere University*, Finland (Aug 2015 – Mar 2019)  
-- Thesis Title: *ML Based Industrial Manufacturing*
+*Tampere University*, Finland (Aug 2015 – Mar 2019)  
+Thesis Title: *ML Based Industrial Manufacturing*
 
 **BSc. Electrical and Computer Science**  
-- *Qazvin University, Iran*  (Aug 2010 – Mar 2014)  
--  Thesis Title: *Autonomous Guardian Robot for Crack Detection in Industrial Gas Pipelines*
+*Qazvin University, Iran*  (Aug 2010 – Mar 2014)  
+Thesis Title: *Autonomous Guardian Robot for Crack Detection in Industrial Gas Pipelines*
 
 ## Work Experience
 **Nokia**  
