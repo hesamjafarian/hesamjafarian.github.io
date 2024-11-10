@@ -38,4 +38,8 @@ Thesis Title: *Autonomous Guardian Robot for Crack Detection in Industrial Gas P
 - 3rd Place in International Robocup Competitions in [Small Size Robots League](https://www.robocup.org/), Singapore, 2010 (MRL Team)
 - 1st Place in Robocup Competitions in Small Size Robots League, Iran, 2010 (MRL Team)
 
+## Certificates
   
+- Advanced Intellectual Property Training, WIPO Organization, Switzerland, 2023
+- Patent Drafting, WIPO Organization, Switzerland, 2023
+- Intellectual Property, Copyrights and Trademarks, WIPO Organization, Switzerland, 2023
