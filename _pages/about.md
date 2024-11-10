@@ -9,7 +9,7 @@ redirect_from:
 
 Machine Learning Engineer with over 5 years of extensive experience in research, end-to-end development and deployment of machine learning (Deep Learning and Reinforcement Learning) solutions by means of real and synthetic data generations. I bring a  foundation in cloud-based model deployment and autonomous systems designs (autonomous cars) deploying my expertise across various domains, such as communication systems, signal processing, and industrial robotics.   
 
-## Interest Topics
+## Fascinating Topics Always Worth Discussing
 
 ### Autonomous System Designs
 - End-to-End Autonomous System Designs
