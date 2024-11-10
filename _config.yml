@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Ying Wang (王颖) / Homepage"
+title                    : "Hesam Jafarian / Homepage"
 title_separator          : "-"
-name                     : &name "Ying Wang"
+name                     : &name "Hesam Jafarian"
 description              : &description "personal description"
-url                      : https://yingwanghappy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://hesamjafarian.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "yingwanghappy/yingwanghappy.github.io"
+repository               : "hesamjafarian/hesamjafarian.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,13 +22,13 @@ repository               : "yingwanghappy/yingwanghappy.github.io"
 author:
   # Biographic information
   avatar           : "profile_wy.jpg"
-  name             : "Ying Wang (王颖)"
-  pronouns         : # example: "she/her"  
-  bio              : "Posdoc Researcher at KTH and AMSS"
-  location         : "Stockholm, Sweden"
-  employer         : "KTH & AMSS"
+  name             : "Hesam Jafarian"
+  pronouns         : # example: "He/His"  
+  bio              : "Machine Learning and Data Engineer"
+  location         : "Helsinki, Finland"
+  employer         : ""
   uri              : # URL
-  # email            : "none@example.org" 
+  # email            : "HesamJafarian@gmail.com" 
 
   # Academic websites
   #arxiv            : # URL - Update with the correct link to your profile
