@@ -10,9 +10,9 @@ redirect_from:
 {% include base_path %}
 
 ## Education
-**MSc. Telecommunication and Automation Informatics**  
-*Tampere University, Aug 2015 – Mar 2019 (Finland)*  
-Thesis Title: *ML Based Industrial Manufacturing*
+- **MSc. Telecommunication and Automation Informatics**  
+- *Tampere University, Aug 2015 – Mar 2019 (Finland)*
+  Thesis Title: *ML Based Industrial Manufacturing*
 
 **BSc. Electrical and Computer Science**  
 *Qazvin University, Aug 2010 – Mar 2014 (Iran)*   
