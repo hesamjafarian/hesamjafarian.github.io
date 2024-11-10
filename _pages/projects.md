@@ -11,7 +11,7 @@ redirect_from:
 
 ## Small Size Robots
 
-<img src="../images/robocup2010_mrl.jpg" alt="MRL vs ER-Force" style="width:500px; aspect-ratio: 4 / 3;" />
+<div style="text-align: center;"><img src="../images/robocup2010_mrl.jpg" alt="MRL vs ER-Force" style="width:500px; aspect-ratio: 4 / 3;" /></div>
 
 ### Overview
 In the Small Size League (SSL), each team constructs autonomous cylindrical robots that play soccer with an orange golf ball. During the match, eight robots from each team work to score goals using swift passing maneuvers and intense dueling strategies. The robot system operates entirely autonomously, meaning no team member is allowed to control the robots directly. Instead, a central PC (typically a simple laptop) receives preprocessed camera data, runs the team's AI, and communicates with the robots via radio.
@@ -19,23 +19,24 @@ In the Small Size League (SSL), each team constructs autonomous cylindrical robo
 ### The Playing Field
 The playing field measures 9m x 12m and is covered with a carpet. All 22 robots are monitored by two USB cameras positioned above the field, connected to a centralized vision computer. 
 
-<img src="../images/system.jpg" alt="Playing Field" style="width:500px; aspect-ratio: 4 / 3;" />
+<div style="text-align: center;"><img src="../images/system.jpg" alt="Playing Field" style="width:500px; aspect-ratio: 4 / 3;" /></div>
 
 Each robot's top plate features a standardized pattern known as the “Butterfly Pattern” (made of colored paper), clearly identifying its jersey number and team affiliation. The color in the center indicates team affiliation (blue vs. yellow team), while the butterfly design around it represents the jersey number. Additionally, the front two points are spaced further apart than the back ones, allowing the camera to determine the robot’s orientation.
-<img src="../images/smal_sizer_robot_patterns.png" alt="Robot Patterns" style="width:500px; aspect-ratio: 4 / 3;" />
+
+<div style="text-align: center;"><img src="../images/smal_sizer_robot_patterns.png" alt="Robot Patterns" style="width:500px; aspect-ratio: 4 / 3;" /></div>
 
 ### The Robots
 Robot sizes are limited by rules to a diameter of 18 cm and a height of 15 cm, leading to similar appearances. However, the mechanical and electrical designs can vary significantly. Most systems are built with four omni-wheels and electromagnetic kicker devices for linear and chip kicks.
 
-<img src="../images/mrl_robot.png" alt="MRL Robot" style="width:500px; aspect-ratio: 4 / 3;" />
+<div style="text-align: center;"><img src="../images/mrl_robot.png" alt="MRL Robot" style="width:500px; aspect-ratio: 4 / 3;" /></div>
 
 ### Main Board
 The robot's electronics featured an Altera Cyclone FPGA connected to an ARM core. A parallel motor controller was implementing within the FPGA to reduce the CPU time required for PID controllers' calculations. 
 
-<img src="../images/main_board_v1.png" alt="Robot Main Board" style="width:500px; aspect-ratio: 4 / 3;" />
+<div style="text-align: center;"><img src="../images/main_board_v1.png" alt="Robot Main Board" style="width:500px; aspect-ratio: 4 / 3;" /></div>
 
 By shifting the controllers to the FPGA, the ARM processor was able to handle other tasks with fewer interruptions. Additionally, a frequency IR sensor for ball detection was introduced along some modifications of the wireless board. 
-<img src="../images/mrl_robot_pcb.png" alt="Main Board PCB" style="width:500px; aspect-ratio: 4 / 3;" />
+<div style="text-align: center;"><img src="../images/mrl_robot_pcb.png" alt="Main Board PCB" style="width:500px; aspect-ratio: 4 / 3;" /></div>
 
 
 ### 2010 RoboCup Final
