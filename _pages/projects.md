@@ -27,6 +27,14 @@ Robot sizes are limited by rules to a diameter of 18 cm and a height of 15 cm, l
 
 <img src="../images/mrl_robot.png" alt="MRL Robot" style="width:500px; aspect-ratio: 4 / 3;" />
 
+### Main Board
+The robot's electronics featured an Altera Cyclone FPGA connected to an ARM core. A parallel motor controller was implementing within the FPGA to reduce the CPU time required for PID controllers' calculations. 
+<img src="../images/main_board_v1.png" alt="Robot Main Board" style="width:500px; aspect-ratio: 4 / 3;" />
+
+By shifting the controllers to the FPGA, the ARM processor was able to handle other tasks with fewer interruptions. Additionally, a frequency IR sensor for ball detection was introduced along some modifications of the wireless board. 
+<img src="../images/mrl_robot_pcb.png" alt="Main Board PCB" style="width:500px; aspect-ratio: 4 / 3;" />
+
+
 ### 2010 RoboCup Final
 The RoboCup 2010 competitions ended again with Skuba (Thailand) team being able to secure the world championship title with a 6:1 win in the final against CMDragons (USA). In the game for third place, MRL (Iran) beat KIKS (Japan) 4:1.
 
