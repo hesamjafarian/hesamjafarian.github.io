@@ -27,6 +27,15 @@ Robot sizes are limited by rules to a diameter of 18 cm and a height of 15 cm, l
 
 <img src="../images/mrl_robot.png" alt="MRL Robot" style="width:500px; aspect-ratio: 4 / 3;" />
 
+### 2010 RoboCup Final
+The RoboCup 2010 competitions ended again with Skuba (Thailand) team being able to secure the world championship title with a 6:1 win in the final against CMDragons (USA). In the game for third place, MRL (Iran) beat KIKS (Japan) 4:1.
+
+Place	Team	Land
+- 1	Skuba	Thailand
+- 2	CMDragons	USA
+- 3	MRL	Iran
+- 4	KIKS	Japan
+
 ### Referee
 Currently, a human main referee is responsible for all decisions, supported by a second assistant referee and a RefBox operator. The RefBox is a dedicated computer used to input all decisions, which are then sent to the teams via network connection. Autonomous referee systems, known as Autorefs, have been developed to automate the game further and will see increased use in the league.
 
