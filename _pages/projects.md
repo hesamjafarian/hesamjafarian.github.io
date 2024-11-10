@@ -11,6 +11,7 @@ redirect_from:
 
 ## Small Size Robots
 
+<img src="../images/robocup2010_mrl.jpg" alt="MRL vs ER-Force" style="width:500px; aspect-ratio: 4 / 3;" />
 ### Overview
 In the Small Size League (SSL), each team constructs autonomous cylindrical robots that play soccer with an orange golf ball. During the match, eight robots from each team work to score goals using swift passing maneuvers and intense dueling strategies. The robot system operates entirely autonomously, meaning no team member is allowed to control the robots directly. Instead, a central PC (typically a simple laptop) receives preprocessed camera data, runs the team's AI, and communicates with the robots via radio.
 
