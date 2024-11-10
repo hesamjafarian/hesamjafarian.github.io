@@ -21,7 +21,7 @@ repository               : "hesamjafarian/hesamjafarian.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_wy.jpg"
+  avatar           : "Hesam.jpg"
   name             : "Hesam Jafarian"
   pronouns         : # example: "He/His"  
   bio              : "Machine Learning and Data Engineer"
