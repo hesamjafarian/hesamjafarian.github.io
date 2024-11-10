@@ -19,8 +19,8 @@ Machine Learning Engineer with over 5 years of extensive experience in research,
 
 
 ## Contact
-* Email: wangying96@amss.ac.cn  or  yinwa@kth.se
-* Address: Malvinas Väg 10, 114 28 Stockholm, Sweden
+* Email: HesamJafarian@gmail.com
+* Address: Espoo, Finland
 
 <a href="https://clustrmaps.com/site/1c23n"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=kCmh38oCjEhDlhfTENopYvuYyGl8-Ubmj25c5TG9DP8&cl=ffffff" /></a>
 
