@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-## <span style="color:blue">Education</span>
+## Education
 **MSc. Telecommunication and Automation Informatics**  
 *Tampere University, Finland*  
 **Aug 2015 – Mar 2019**  
@@ -20,7 +20,7 @@ Thesis Title: *ML Based Industrial Manufacturing*
 **Aug 2010 – Mar 2014**  
 Thesis Title: *Autonomous Guardian Robot for Crack Detection in Industrial Gas Pipelines*
 
-## <span style="color:blue">Work Experience</span>
+## Work Experience
 **Nokia**  
 *Software Engineer (5G ML Engineer)*  
 **Aug 2022 – Jan 2024 (Finland)**
@@ -33,12 +33,12 @@ Thesis Title: *Autonomous Guardian Robot for Crack Detection in Industrial Gas P
 *Machine Learning Engineer*  
 **Dec 2018 – Mar 2019 (Tampere, Finland)**
 
-## <span style="color:blue">Awards and Honors</span>
+## Awards and Honors
 - Finalist for Future Factory Design 2016, Helsinki
 - 3rd Place in International Robocup Competitions in [Small Size Robots League](https://www.robocup.org/), Singapore, 2010 (MRL Team)
 - 1st Place in Robocup Competitions in Small Size Robots League, Iran, 2010 (MRL Team)
 
-## <span style="color:blue">Certificates</span>
+## Certificates
   
 - Advanced Intellectual Property Training, WIPO Organization, Switzerland, 2023
 - Patent Drafting, WIPO Organization, Switzerland, 2023
