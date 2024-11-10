@@ -17,6 +17,7 @@ redirect_from:
 
 - **BSc. Electrical and Computer Science**  
   *Qazvin University, Aug 2010 – Mar 2014 (Iran)*   
+
   Thesis Title: *Autonomous Guardian Robot for Crack Detection in Industrial Gas Pipelines*
 
 ## Work Experience
