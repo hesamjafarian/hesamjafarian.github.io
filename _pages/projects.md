@@ -8,11 +8,11 @@ redirect_from:
 ---
 
 ## Autonomous Cars
-The autonomous self-driving car was an a design of a platform for remote control cars written in Python based on famous donkeycar. It was further developed to focus on allowing fast experimentation and easy design contributions. It supports autopilots, including neural networks and computer vision systems. The autonomous car which was based on 1/10 of a Formula one racing car offers a rich low scale and real and simulation synthetic data generation so one can experiment with self-driving platform even before you build a robot or real car. 
-<div style="text-align: center;"><img src="../images//car3.jpg" alt="1/10 of autonomous car" style="width:500px;" /></div>
+The autonomous self-driving car was designed as a platform for remote control cars written in Python, based on the famous DonkeyCar. It was further developed to focus on allowing fast experimentation and easy design contributions. It supports autopilots, including neural networks and computer vision systems. The autonomous car, based on a 1/10 scale model of a Formula One racing car, offers a rich, low-scale real and simulated synthetic data generation, allowing experimentation with a self-driving platform even before building a robot or real car.
+<div style="text-align: center;"><img src="../images/car3.jpg" alt="1/10 scale of an autonomous car" style="width:500px;"></div>
 
 ## Deep Learning and Real Data Collection
-<div style="text-align: center;"><img src="../images/driving_sample.gif" alt="MRL vs ER-Force" style="width:500px;" /></div>
+<div style="text-align: center;"><img src="../images/driving_sample.gif" alt="MRL vs ER-Force" style="width:500px;"></div>
 
 The deep learning autopilot uses a single forward-facing camera and a convolutional neural network (CNN) to enable autonomous driving through a method called Behavioral Cloning, also known as Imitation Learning. The goal of Behavioral Cloning is to create an autopilot that mirrors human driving actions, making it an intuitive and widely used approach for self-driving systems.
 
@@ -20,7 +20,7 @@ Here’s how the process works for enabling autonomous driving:
 
 **Data Collection:** A human driver operates the car to gather training data. As the car is manually driven around the track, the system records data at 20 samples per second. Each sample includes a camera image, throttle position, and steering angle from that specific moment. Typically, around 10,000 samples are required for effective training.
 
-<div style="text-align: center;"><img src="../images/train-immitation-learning-autonomous-car.gif" alt="data collection using immitation learning" style="width:500px;" /></div>
+<div style="text-align: center;"><img src="../images/train-immitation-learning-autonomous-car.gif" alt="Data collection using imitation learning" style="width:500px;"></div>
 
 **Data Cleaning:** To ensure data quality, any instances of poor driving—like veering off track or colliding with obstacles—should be removed from the dataset. Alternatively, such data can be discarded in real-time to avoid collecting errors.
 
@@ -30,13 +30,13 @@ Here’s how the process works for enabling autonomous driving:
 
 Since the deep learning autopilot relies heavily on visual input, consistent lighting conditions are important. This approach works well on controlled indoor tracks, where lighting and environmental factors are stable. However, outdoor use can be challenging, as changing lighting and environmental conditions may affect performance.
 
-**Successful neural network fitting model as an auto-pilot**
-<div style="text-align: center;"><img src="../images/successful_auto_pilot.gif" alt="Successful Auto-pilot" style="width:500px;" /></div>
+**Successful Neural Network Fitting Model as an Auto-Pilot**
+<div style="text-align: center;"><img src="../images/successful_auto_pilot.gif" alt="Successful Auto-Pilot" style="width:500px;"></div>
 
-**Underfiting network which causes failure in auto-pilot**
-<div style="text-align: center;"><img src="../images/first_time_faiilure_auto_pilot.gif" alt="Failed Auto-Pilot" style="width:500px;" /></div>
+**Underfitting Network Which Causes Failure in Auto-Pilot**
+<div style="text-align: center;"><img src="../images/first_time_failure_auto_pilot.gif" alt="Failed Auto-Pilot" style="width:500px;"></div>
 
-## Small Size Robots
+## Autonomous Small Size Robots
 
 <div style="text-align: center;"><img src="../images/robocup2010_mrl.jpg" alt="MRL vs ER-Force" style="width:500px; aspect-ratio: 4 / 3;" /></div>
 
