@@ -11,7 +11,7 @@ redirect_from:
 The autonomous self-driving car was an a design of a platform for remote control cars written in Python based on famous donkeycar. It was further developed to focus on allowing fast experimentation and easy design contributions. It supports autopilots, including neural networks and computer vision systems. The autonomous car which was based on 1/10 of a Formula one racing car offers a rich low scale and real and simulation synthetic data generation so one can experiment with self-driving platform even before you build a robot or real car. 
 <div style="text-align: center;"><img src="../images//car3.jpg" alt="1/10 of autonomous car" style="width:500px;" /></div>
 
-## Deep learning and Real Data Collection
+## Deep Learning and Real Data Collection
 <div style="text-align: center;"><img src="../images/driving_sample.gif" alt="MRL vs ER-Force" style="width:500px;" /></div>
 
 The deep learning autopilot uses a single forward-facing camera and a convolutional neural network (CNN) to enable autonomous driving through a method called Behavioral Cloning, also known as Imitation Learning. The goal of Behavioral Cloning is to create an autopilot that mirrors human driving actions, making it an intuitive and widely used approach for self-driving systems.
@@ -29,6 +29,12 @@ Here’s how the process works for enabling autonomous driving:
 **Autonomous Driving:** Once trained, the CNN can predict throttle and steering values based on real-time images. In autopilot mode, the system captures an image, inputs it into the CNN, receives the predicted throttle and steering commands, and sends these to the vehicle’s hardware—updating 20 times per second for smooth driving.
 
 Since the deep learning autopilot relies heavily on visual input, consistent lighting conditions are important. This approach works well on controlled indoor tracks, where lighting and environmental factors are stable. However, outdoor use can be challenging, as changing lighting and environmental conditions may affect performance.
+**Successful neural network fitting model as an auto-pilot**
+
+<div style="text-align: center;"><img src="../images/successful_auto_pilot.gif" alt="Successful Auto-pilot" style="width:500px;" /></div>
+
+**Underfiting network which causes failure in auto-pilot**
+<div style="text-align: center;"><img src="../images/first_time_faiilure_auto_pilot.gif" alt="Failed Auto-Pilot" style="width:500px;" /></div>
 
 ## Small Size Robots
 
