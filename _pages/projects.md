@@ -20,6 +20,8 @@ Here’s how the process works for enabling autonomous driving:
 
 **Data Collection:** A human driver operates the car to gather training data. As the car is manually driven around the track, the system records data at 20 samples per second. Each sample includes a camera image, throttle position, and steering angle from that specific moment. Typically, around 10,000 samples are required for effective training.
 
+<div style="text-align: center;"><img src="../images/driving_sample.gif" alt="data collection using immitation learning" style="width:500px;" /></div>
+
 **Data Cleaning:** To ensure data quality, any instances of poor driving—like veering off track or colliding with obstacles—should be removed from the dataset. Alternatively, such data can be discarded in real-time to avoid collecting errors.
 
 **Model Training:** The cleaned dataset is used to train the CNN, teaching it to link specific images with corresponding throttle and steering commands.
