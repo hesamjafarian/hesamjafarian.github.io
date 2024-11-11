@@ -8,10 +8,10 @@ redirect_from:
 ---
 
 ## Autonomous Cars
-The autonomous self-driving car was an a design of a platform for remote control cars written in Python based on famous donkeycar. It was further developed to focus on allowing fast experimentation and easy design contributions. It supports autopilots, including neural networks and computer vision systems. The autonomous car which was based on 1/10 of an Formula one racing car offers a rich low scale and real and simulation synthetic data generation so one can experiment with self-driving platform even before you build a robot or real car. 
+The autonomous self-driving car was an a design of a platform for remote control cars written in Python based on famous donkeycar. It was further developed to focus on allowing fast experimentation and easy design contributions. It supports autopilots, including neural networks and computer vision systems. The autonomous car which was based on 1/10 of a Formula one racing car offers a rich low scale and real and simulation synthetic data generation so one can experiment with self-driving platform even before you build a robot or real car. 
 <div style="text-align: center;"><img src="../images//car3.jpg" alt="1/10 of autonomous car" style="width:500px;" /></div>
 
-## Deep learning and real data collection
+## Deep learning and Real Data Collection
 <div style="text-align: center;"><img src="../images/driving_sample.gif" alt="MRL vs ER-Force" style="width:500px;" /></div>
 
 The deep learning autopilot uses a single forward-facing camera and a convolutional neural network (CNN) to enable autonomous driving through a method called Behavioral Cloning, also known as Imitation Learning. The goal of Behavioral Cloning is to create an autopilot that mirrors human driving actions, making it an intuitive and widely used approach for self-driving systems.
