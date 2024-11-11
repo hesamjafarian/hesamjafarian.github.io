@@ -34,7 +34,7 @@ Since the deep learning autopilot relies heavily on visual input, consistent lig
 <div style="text-align: center;"><img src="../images/successful_auto_pilot.gif" alt="Successful Auto-Pilot" style="width:500px;"></div>
 
 **Underfitting Network Which Causes Failure in Auto-Pilot**
-<div style="text-align: center;"><img src="../images/first_time_failure_auto_pilot.gif" alt="Failed Auto-Pilot" style="width:500px;"></div>
+<div style="text-align: center;"><img src="../images/first_time_faiilure_auto_pilot.gif" alt="Failed Auto-Pilot" style="width:500px;"></div>
 
 ## Autonomous Small Size Robots
 
