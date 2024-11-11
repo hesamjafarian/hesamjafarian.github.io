@@ -18,13 +18,13 @@ The deep learning autopilot uses a single forward-facing camera and a convolutio
 
 Here’s how the process works for enabling autonomous driving:
 
-Data Collection: A human driver operates the car to gather training data. As the car is manually driven around the track, the system records data at 20 samples per second. Each sample includes a camera image, throttle position, and steering angle from that specific moment. Typically, around 10,000 samples are required for effective training.
+**Data Collection:** A human driver operates the car to gather training data. As the car is manually driven around the track, the system records data at 20 samples per second. Each sample includes a camera image, throttle position, and steering angle from that specific moment. Typically, around 10,000 samples are required for effective training.
 
-Data Cleaning: To ensure data quality, any instances of poor driving—like veering off track or colliding with obstacles—should be removed from the dataset. Alternatively, such data can be discarded in real-time to avoid collecting errors.
+**Data Cleaning:** To ensure data quality, any instances of poor driving—like veering off track or colliding with obstacles—should be removed from the dataset. Alternatively, such data can be discarded in real-time to avoid collecting errors.
 
-Model Training: The cleaned dataset is used to train the CNN, teaching it to link specific images with corresponding throttle and steering commands.
+**Model Training:** The cleaned dataset is used to train the CNN, teaching it to link specific images with corresponding throttle and steering commands.
 
-Autonomous Driving: Once trained, the CNN can predict throttle and steering values based on real-time images. In autopilot mode, the system captures an image, inputs it into the CNN, receives the predicted throttle and steering commands, and sends these to the vehicle’s hardware—updating 20 times per second for smooth driving.
+**Autonomous Driving:** Once trained, the CNN can predict throttle and steering values based on real-time images. In autopilot mode, the system captures an image, inputs it into the CNN, receives the predicted throttle and steering commands, and sends these to the vehicle’s hardware—updating 20 times per second for smooth driving.
 
 Since the deep learning autopilot relies heavily on visual input, consistent lighting conditions are important. This approach works well on controlled indoor tracks, where lighting and environmental factors are stable. However, outdoor use can be challenging, as changing lighting and environmental conditions may affect performance.
 
