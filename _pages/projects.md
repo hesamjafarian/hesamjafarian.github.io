@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-## Autopilot self driving cars
+## Autopilot Driving Car Platform
 The autonomous self-driving car was designed as a platform for remote control cars written in Python, based on the famous DonkeyCar. It was further developed to focus on allowing fast experimentation and easy design contributions. It supports autopilots, including neural networks and computer vision systems. The autonomous car, based on a 1/10 scale model of a Formula One racing car, offers a rich, low-scale real and simulated synthetic data generation, allowing experimentation with a self-driving platform even before building a robot or real car.
 <div style="text-align: center;"><img src="../images/car3.jpg" alt="1/10 scale of an autonomous car" style="width:500px;"></div>
 
