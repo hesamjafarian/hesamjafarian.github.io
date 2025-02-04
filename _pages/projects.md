@@ -26,6 +26,10 @@ Here’s how the process works for enabling autonomous driving:
 
 **Model Training:** The cleaned dataset is used to train the CNN, teaching it to link specific images with corresponding throttle and steering commands.
 
+**Synthetic Data Generation:**
+For our autopilot car driving project, I built a simulator to create realistic driving scenarios. We control the virtual car using a PS4 controller, which allows for precise maneuvering and interaction within the simulated environment. The vehicle is equipped with three cameras positioned at the left, middle, and right points of the car, capturing diverse angles of the driving scene. This setup helps us gather a comprehensive dataset of images, crucial for training our machine learning models to recognize and react to various road conditions and obstacles effectively. This method ensures a robust dataset, facilitating enhanced training outcomes for our autonomous driving algorithms.
+<div style="text-align: center;"><img src="../images/simulator.jpg" alt="1/10 scale of an autonomous car" style="width:500px;"></div>
+
 **Autonomous Driving:** Once trained, the CNN can predict throttle and steering values based on real-time images. In autopilot mode, the system captures an image, inputs it into the CNN, receives the predicted throttle and steering commands, and sends these to the vehicle’s hardware—updating 20 times per second for smooth driving.
 
 Since the deep learning autopilot relies heavily on visual input, consistent lighting conditions are important. This approach works well on controlled indoor tracks, where lighting and environmental factors are stable. However, outdoor use can be challenging, as changing lighting and environmental conditions may affect performance.
