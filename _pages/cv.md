@@ -16,21 +16,21 @@ redirect_from:
 
   Thesis Title: *Machine learning, Industrial Autonomous Systems Designs*
 
-  Research focus: Machine learning, multi-sensor fusion, and simulation-based analytics for autonomous systems, with applications to navigation and situational awareness.
+  *Research focus: Machine learning, multi-sensor fusion, and simulation-based analytics for autonomous systems, with applications to navigation and situational awareness.*
   
 - **MSc. Telecommunication and Automation Informatics**  
   *Tampere University, Aug 2015 – Mar 2019 (Finland)*
   
   Thesis Title: *ML Based Industrial Manufacturing*
 
-  Focus on Specialization in data-driven control, signal processing, and AI integration
+  *Focus on Specialization in data-driven control, signal processing, and AI integration.*
 
 - **BSc. Electrical and Computer Science**  
   *Qazvin University, Aug 2010 – Mar 2014 (Iran)*   
 
   Thesis Title: *Autonomous Guardian Robot for Crack Detection in Industrial Pipelines*
 
-  Focus on embedded systems, robotics, and real-time data analysis using FPGA/ARM platforms.
+  *Focus on embedded systems, robotics, and real-time data analysis using FPGA/ARM platforms.*
 
 ## Work Experience
 - **Nokia**  
