@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Data Scientist and Machine Learning Engineer with extensive experience in AI-driven solutions for autonomous systems, specializing in multi-sensor fusion, real-time decision-making, and intelligent navigation for maritime applications. Proficient in developing and deploying machine learning models, data pipelines, and ROS2-based systems for autonomous vessels, with a focus on sensor data (LiDAR, radar, GNSS, AIS, camera). Skilled in Python, TensorFlow, PyTorch, and real-time data processing, with a strong background in industrial R&D and scientific publishing. Passionate about advancing sustainable maritime operations through innovative AI and robotics solutions in a collaborative, multidisciplinary environment.
+Data Scientist and Machine Learning Engineer with extensive experience in AI-driven solutions for autonomous systems, specializing in multi-sensor fusion, real-time decision-making, and intelligent navigation for maritime applications. Proficient in developing and deploying machine learning models, data pipelines, and ROS2-based systems for autonomous systems, with a focus on sensor data (LiDAR, radar, GNSS, camera). Skilled in Python, TensorFlow, PyTorch, and real-time data processing, with a strong background in industrial R&D and scientific publishing. Passionate about advancing sustainable maritime operations through innovative AI and robotics solutions in a collaborative, multidisciplinary environment.
 
 ## Fascinating Topics Always Worth Discussing
 
