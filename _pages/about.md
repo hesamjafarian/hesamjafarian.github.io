@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Machine Learning Engineer with over 5 years of extensive experience in research, end-to-end development and deployment of machine learning (Deep Learning and Reinforcement Learning) solutions by means of real and synthetic data generations. I bring a  foundation in cloud-based model deployment and autonomous systems designs (autonomous cars) deploying my expertise across various domains, such as communication systems, signal processing, and industrial robotics.   
+Data Scientist and Machine Learning Engineer with extensive experience in AI-driven solutions for autonomous systems, specializing in multi-sensor fusion, real-time decision-making, and intelligent navigation for maritime applications. Proficient in developing and deploying machine learning models, data pipelines, and ROS2-based systems for autonomous vessels, with a focus on sensor data (LiDAR, radar, GNSS, AIS, camera). Skilled in Python, TensorFlow, PyTorch, and real-time data processing, with a strong background in industrial R&D and scientific publishing. Passionate about advancing sustainable maritime operations through innovative AI and robotics solutions in a collaborative, multidisciplinary environment.
 
 ## Fascinating Topics Always Worth Discussing
 
