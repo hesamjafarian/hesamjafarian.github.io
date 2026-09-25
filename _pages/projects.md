@@ -3,89 +3,74 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
-## Autopilot Driving Car Platform
-The autonomous self-driving car was designed as a platform for remote control cars written in Python, based on the famous DonkeyCar. It was further developed to focus on allowing fast experimentation and easy design contributions. It supports autopilots, including neural networks and computer vision systems. The autonomous car, based on a 1/10 scale model of a Formula One racing car, offers a rich, low-scale real and simulated synthetic data generation, allowing experimentation with a self-driving platform even before building a robot or real car.
-<div style="text-align: center;"><img src="../images/car3.jpg" alt="1/10 scale of an autonomous car" style="width:500px;"></div>
+{% include base_path %}
 
-## Deep Learning and Real Data Collection
-<div style="text-align: center;"><img src="../images/driving_sample.gif" alt="MRL vs ER-Force" style="width:500px;"></div>
+A selection of my work in autonomous systems — from the maritime autonomy stack I currently lead, through industrial robotics and interpretable AI, to the platforms where I started in real-time robotics.
 
-The deep learning autopilot uses a single forward-facing camera and a convolutional neural network (CNN) to enable autonomous driving through a method called Behavioral Cloning, also known as Imitation Learning. The goal of Behavioral Cloning is to create an autopilot that mirrors human driving actions, making it an intuitive and widely used approach for self-driving systems.
+## Autonomous & Remotely-Operated Maritime Systems
+*2025 – present · Autonomous Intelligent Systems Lab (AISLab), Turku*
 
-Here’s how the process works for enabling autonomous driving:
+My role: I lead the simulation, digital-twin, and multi-sensor perception development for autonomous and remotely-operated vessels that monitor marine areas and protect critical seabed infrastructure in the Baltic Sea. This is part of the USVA project (*Uncrewed Surface Vessels for Automated Maritime Critical Infrastructure Protection*), coordinated by Turku UAS and funded by Business Finland (≈ €1.3M), with field testing on real platforms.
 
-**Data Collection:** A human driver operates the car to gather training data. As the car is manually driven around the track, the system records data at 20 samples per second. Each sample includes a camera image, throttle position, and steering angle from that specific moment. Typically, around 10,000 samples are required for effective training.
+### Real platforms
+The USVA pilot vessel is a 14-metre Watercat M12, formerly operated by the Finnish Navy and refurbished with Marine Alutech for remote operation — controlled from distant shore stations, carrying environmental-monitoring and underwater-inspection sensors, and engineered to keep operating under GPS/communication interference and to comply with the international maritime rules of the road (COLREG). The lab's electric research vessel *eM/S Salama* serves as a second on-water testbed for sensor integration and sim-to-real validation.
+<div style="text-align: center;"><img src="../images/maritime/usva-vessel.jpg" alt="USVA remotely-operated pilot vessel (Watercat M12)" style="width:100%; max-width:660px; height:auto;"></div>
+<p style="text-align: center; font-size: 0.85em; color: #888;"><em>The USVA pilot vessel — a 14 m Watercat M12 refurbished for remote operation. Photo: Turku UAS / USVA project.</em></p>
+<div style="text-align: center;"><img src="../images/maritime/ems-salama.jpg" alt="eM/S Salama electric research vessel" style="width:100%; max-width:660px; height:auto;"></div>
+<p style="text-align: center; font-size: 0.85em; color: #888;"><em>eM/S Salama, the lab's electric research vessel. Photo: Turku UAS.</em></p>
 
-<div style="text-align: center;"><img src="../images/train-immitation-learning-autonomous-car.gif" alt="Data collection using imitation learning" style="width:500px;"></div>
+### Digital twin & distributed sensing
+A digital twin links live vessel telemetry with the simulation environment over a distributed sensor architecture (Fast DDS, MQTT, TCP/IP, UDP), enabling safe, repeatable AI testing, decision support, and real-world situational awareness before anything is trialled on the water.
+<div style="text-align: center;"><img src="../images/maritime/digital-twin-telemetry.jpg" alt="Digital twin and live telemetry integration" style="width:100%; max-width:680px; height:auto;"></div>
 
-**Data Cleaning:** To ensure data quality, any instances of poor driving—like veering off track or colliding with obstacles—should be removed from the dataset. Alternatively, such data can be discarded in real-time to avoid collecting errors.
+### Multi-view perception: detection & tracking
+Perception fuses RGB and thermal cameras, LiDAR, radar, AIS, and GNSS. Multi-view vessel detection and tracking combines real-time detectors (RT-DETR / YOLO) with BoT-SORT tracking, cross-camera association, and AIS-assisted identity to maintain a consistent vessel track across viewpoints — validated in real ports and waterways, including robustness to sensor and modality loss.
+<div style="text-align: center;"><img src="../images/maritime/multi-view-vessel-detection.jpg" alt="Multi-view vessel detection and tracking" style="width:100%; max-width:680px; height:auto;"></div>
+<div style="text-align: center;"><img src="../images/maritime/real-environment-test.jpg" alt="Real-environment multi-view monitoring test" style="width:100%; max-width:680px; height:auto;"></div>
 
-**Model Training:** The cleaned dataset is used to train the CNN, teaching it to link specific images with corresponding throttle and steering commands.
+### Critical infrastructure monitoring
+Beyond open-water perception, I model critical-infrastructure monitoring scenarios — for example, bridge-mounted camera arrays that watch approaches, exclusion zones, and passing traffic. Overlapping fields of view improve coverage around protected assets and reduce blind spots, supporting detection, tracking, loitering awareness, and incident response.
+<div style="text-align: center;"><img src="../images/maritime/bridge-infrastructure-monitoring.jpg" alt="Bridge-based critical infrastructure monitoring with camera arrays" style="width:100%; max-width:700px; height:auto;"></div>
 
-**Synthetic Data Generation:**
-For our autopilot car driving project, I built a simulator to create realistic driving scenarios. We control the virtual car using a PS4 controller, which allows for precise maneuvering and interaction within the simulated environment. The vehicle is equipped with three cameras positioned at the left, middle, and right points of the car, capturing diverse angles of the driving scene. This setup helps us gather a comprehensive dataset of images, crucial for training our machine learning models to recognize and react to various road conditions and obstacles effectively. This method ensures a robust dataset, facilitating enhanced training outcomes for our autonomous driving algorithms.
-<div style="text-align: center;"><img src="../images/simulator.jpg" alt="1/10 scale of an autonomous car" style="width:500px;"></div>
+### COLREG-aware collision intelligence
+I develop interpretable, geometry- and data-driven collision-risk assessment aligned with COLREG rules — moving from raw object detection to explainable collision understanding that an operator or autonomy stack can trust.
+<div style="text-align: center;"><img src="../images/maritime/colreg-collision-risk.jpg" alt="Interpretable COLREG-aware collision-risk assessment" style="width:100%; max-width:700px; height:auto;"></div>
 
+### Sim-to-real validation
+A core theme is quantifying and closing the simulation-to-reality gap — pairing real platforms and sensors with their digital-twin and simulated-sensor counterparts, and comparing detection accuracy, sensor characteristics, and model performance across simulated and real domains before field deployment. The programme also includes exploratory research into next-generation AI methods for maritime perception.
+<div style="text-align: center;"><img src="../images/maritime/sim-to-real-platform.jpg" alt="Platform and sensor context: real vs simulated (sim-to-real)" style="width:100%; max-width:600px; height:auto;"></div>
+<p style="text-align: center; font-size: 0.85em; color: #888;"><em>Real platforms and sensors (USV, thermal rig) paired with their digital-twin and simulated-sensor counterparts.</em></p>
 
-**Autonomous Driving:** Once trained, the CNN can predict throttle and steering values based on real-time images. In autopilot mode, the system captures an image, inputs it into the CNN, receives the predicted throttle and steering commands, and sends these to the vehicle’s hardware—updating 20 times per second for smooth driving.
+In the media: [Yle](https://yle.fi/a/7-10104914) · [Kauppalehti](https://www.kauppalehti.fi/uutiset/a/2e27af04-232b-4904-b1d2-6ebdb9b342e9) · [Helsingin Sanomat](https://www.hs.fi/suomi/art-2000012256364.html)
 
-Since the deep learning autopilot relies heavily on visual input, consistent lighting conditions are important. This approach works well on controlled indoor tracks, where lighting and environmental factors are stable. However, outdoor use can be challenging, as changing lighting and environmental conditions may affect performance.
+## Industrial Robotics & Interpretable AI
+*2018 – 2026 · Tampere University · STEM SAS · AISLab*
 
-**Successful Neural Network Fitting Model as an Auto-Pilot**
-<div style="text-align: center;"><img src="../images/successful_auto_pilot.gif" alt="Successful Auto-Pilot" style="width:500px;"></div>
+Across industrial R&D roles I built digital twins and simulation for robotic cells and developed interpretable AI for robot safety. On the simulation side, I implemented path-planning, route-optimization, and 3D geometric collision-detection algorithms (Separating Axis Theorem, Bounding Volume Hierarchies) with kinematic computation and coordinate transformations. On the ML side, I developed learning-based and rule-based interpretable collision-detection methods for industrial robot manipulators, and AI models for quality prediction in metal additive manufacturing.
 
-**Underfitting Network Which Causes Failure in Auto-Pilot**
-<div style="text-align: center;"><img src="../images/first_time_faiilure_auto_pilot.gif" alt="Failed Auto-Pilot" style="width:500px;"></div>
+This work is published across venues including the *Journal of Mechanical Design*, IEEE FUSION, and the RSS and AHFE workshops — see [Publications](/publications/).
 
-## Autonomous Small Size Robots
+## Autonomous Self-Driving Platform (1/10 scale)
+A deep-learning self-driving platform (Python, based on DonkeyCar) for fast experimentation with autopilots before committing to a full-size vehicle. It uses a single forward-facing camera and a CNN trained by behavioral cloning (imitation learning): a human drives to collect ~10,000 samples — camera image, throttle, and steering — at 20 Hz, the data is cleaned, and the network learns to map images to control commands in real time.
+<div style="text-align: center;"><img src="../images/car3.jpg" alt="1/10-scale autonomous car platform" style="width:100%; max-width:620px; height:auto;"></div>
 
-<div style="text-align: center;"><img src="../images/robocup2010_mrl.jpg" alt="MRL vs ER-Force" style="width:500px; aspect-ratio: 4 / 3;" /></div>
+I also built a simulator for synthetic data generation — driving a virtual car with three cameras (left/centre/right) via a PS4 controller — to enlarge and diversify the dataset before real-world training.
+<div style="text-align: center;"><img src="../images/simulator.jpg" alt="Driving simulator for synthetic data generation" style="width:100%; max-width:620px; height:auto;"></div>
 
-### Overview
-In the Small Size League (SSL), each team constructs autonomous cylindrical robots that play soccer with an orange golf ball. During the match, eight robots from each team work to score goals using swift passing maneuvers and intense dueling strategies. The robot system operates entirely autonomously, meaning no team member is allowed to control the robots directly. Instead, a central PC (typically a simple laptop) receives preprocessed camera data, runs the team's AI, and communicates with the robots via radio.
+A well-fit network drives smoothly on a controlled indoor track, while an under-fit one fails — underlining how much data quality and lighting consistency matter for vision-only autopilots.
+<div style="text-align: center;"><img src="../images/successful_auto_pilot.gif" alt="Trained CNN autopilot driving autonomously" style="width:100%; max-width:620px; height:auto;"></div>
+<p style="text-align: center; font-size: 0.85em; color: #888;"><em>Trained CNN autopilot driving autonomously.</em></p>
 
-### The Playing Field
-The playing field measures 9m x 12m and is covered with a carpet. All 22 robots are monitored by two USB cameras positioned above the field, connected to a centralized vision computer. 
+## Earlier Work — RoboCup Small Size League (2009–2011)
+As a member of the MRL team, I worked on real-time sensing, motion control, and distributed communication for fully autonomous soccer robots on FPGA/ARM platforms. A central PC processes overhead-camera data, runs the team AI, and commands eight robots by radio ~60 times per second. The robot electronics paired an Altera Cyclone FPGA with an ARM core, offloading parallel motor control and PID computation to the FPGA. MRL placed 1st at the national RoboCup and 3rd at the RoboCup 2010 world championship.
+<div style="text-align: center;"><img src="../images/robocup2010_mrl.jpg" alt="MRL at RoboCup 2010" style="width:100%; max-width:600px; height:auto;"></div>
+<div style="text-align: center;"><img src="../images/mrl_robot.png" alt="MRL Small Size League robot" style="width:100%; max-width:480px; height:auto;"></div>
 
-<div style="text-align: center;"><img src="../images/system.jpg" alt="Playing Field" style="width:500px; aspect-ratio: 4 / 3;" /></div>
-
-Each robot's top plate features a standardized pattern known as the “Butterfly Pattern” (made of colored paper), clearly identifying its jersey number and team affiliation. The color in the center indicates team affiliation (blue vs. yellow team), while the butterfly design around it represents the jersey number. Additionally, the front two points are spaced further apart than the back ones, allowing the camera to determine the robot’s orientation.
-
-<div style="text-align: center;"><img src="../images/smal_sizer_robot_patterns.png" alt="Robot Patterns" style="width:500px; aspect-ratio: 4 / 3;" /></div>
-
-### The Robots
-Robot sizes are limited by rules to a diameter of 18 cm and a height of 15 cm, leading to similar appearances. However, the mechanical and electrical designs can vary significantly. Most systems are built with four omni-wheels and electromagnetic kicker devices for linear and chip kicks.
-
-<div style="text-align: center;"><img src="../images/mrl_robot.png" alt="MRL Robot" style="width:500px; aspect-ratio: 4 / 3;" /></div>
-
-### Main Board
-The robot's electronics featured an Altera Cyclone FPGA connected to an ARM core. A parallel motor controller was implementing within the FPGA to reduce the CPU time required for PID controllers' calculations. 
-
-<div style="text-align: center;"><img src="../images/main_board_v1.png" alt="Robot Main Board" style="width:500px; aspect-ratio: 4 / 3;" /></div>
-
-By shifting the controllers to the FPGA, the ARM processor was able to handle other tasks with fewer interruptions. Additionally, a frequency IR sensor for ball detection was introduced along some modifications of the wireless board. 
-<div style="text-align: center;"><img src="../images/mrl_robot_pcb.png" alt="Main Board PCB" style="width:500px; aspect-ratio: 4 / 3;" /></div>
-
-
-### 2010 RoboCup Final
-The RoboCup 2010 competitions ended again with Skuba (Thailand) team being able to secure the world championship title with a 6:1 win in the final against CMDragons (USA). In the game for third place, MRL (Iran) beat KIKS (Japan) 4:1.
-
-Place	Team	Land
-  - 1- Skuba	(From Thailand)
-  - 2- CMDragons	(From USA)
-  - 3- MRL	(From Iran)
-  - 4- KIKS	(From Japan)
-
-### Referee
-Currently, a human main referee is responsible for all decisions, supported by a second assistant referee and a RefBox operator. The RefBox is a dedicated computer used to input all decisions, which are then sent to the teams via network connection. Autonomous referee systems, known as Autorefs, have been developed to automate the game further and will see increased use in the league.
-
-### Competing Teams
-Both opposing teams receive information from the RefBox and Vision systems via a local network. From this point, it is the team's responsibility to process the input. Typically, the camera data is further analyzed to detect the geometrical placement of robots and the ball on the field. The team's AI then determines a strategy and sends its current decisions to the robots approximately 60 times per second to ensure smooth movements. During the game, no team member is allowed to touch the computer running the strategy. Changes can only be made during timeouts and halftime. One team member is allowed to communicate with the referee and exchange robots on the field.
-
-
-
-
+| Place | Team |
+|:-----:|------|
+| 1 | Skuba |
+| 2 | CMDragons |
+| 3 | MRL |
+| 4 | KIKS |

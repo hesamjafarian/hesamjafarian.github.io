@@ -1,56 +1,27 @@
 ---
 permalink: /
-title: "Hesam Jafarian's Home Page"
+title: "Hesam Jafarian"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Data Scientist and Machine Learning Engineer with extensive experience in AI-driven solutions for autonomous systems, specializing in multi-sensor fusion, real-time decision-making, and intelligent navigation for maritime applications. Proficient in developing and deploying machine learning models, data pipelines, and systems for autonomous systems, with a focus on sensor data (LiDAR, radar, GNSS, camera). Skilled in Python, TensorFlow, PyTorch, and real-time data processing, with a strong background in industrial R&D and scientific publishing. Passionate about advancing sustainable operations through AI and robotics solutions in a collaborative, multidisciplinary environment.
+I am a Senior Machine Learning & Simulation Engineer working on autonomous systems. I build digital twins, multi-sensor perception, and real-time simulation for autonomous maritime, aerial, and industrial robotics — designing end-to-end simulation environments and multi-view perception and sensor-fusion pipelines that integrate LiDAR, radar, RGB/thermal cameras, GNSS, and AIS across distributed architectures (ROS 2, Fast DDS, MQTT), and taking models from sim-to-real calibration through to edge deployment.
 
-## Fascinating Topics Always Worth Discussing
+I currently lead simulation and perception development at the Autonomous Intelligent Systems Lab (AISLab), Turku, building the digital-twin and situational-awareness stack for uncrewed vessels that protect maritime critical infrastructure. In parallel, I am completing a doctorate at Tampere University on machine learning for autonomous systems. My earlier industry work spans 5G machine learning at Nokia, neural-network quantization and optimization, and simulation-driven industrial robotics.
 
-### Autonomous System Designs
-- End-to-End Autonomous System Designs
-- Robotics and Automation
-- Self-Driving Vehicles
-- Autonomous Drones
-- Digital Twins
-- Swarm Intelligence
+## Focus Areas
+- **Autonomous maritime systems** — situational awareness, COLREG-aware collision intelligence, and remote/uncrewed operation
+- **Digital twins & real-time 3D simulation** — synthetic data generation and sim-to-real validation
+- **Multi-sensor & multi-view perception** — detection, tracking, and fusion across camera, LiDAR, radar, GNSS, and AIS
+- **Interpretable & efficient AI** — explainable safety models and edge deployment (quantization, ONNX)
 
-### Data Analysis
-- Data Analytics
-- Predictive Analytics
-- Big Data Technologies
-
-### Machine Learning
-- Machine Learning Algorithms
-- Deep Learning Architectures
-- Natural Language Processing (NLP)
-- Computer Vision
-- Reinforcement Learning
-
-### Automation
-- Smart Manufacturing
-- Automation in Healthcare
-- Automated Quality Control
-
-### Data Engineering
-- Data Engineering
-- Cloud Services
-
-### Quantum Systems
-- Quantization and Quantum System Designs
-
-### Specialized Topics
-- AI Ethics
-- AI in Finance
-- Augmented Reality (AR) and Virtual Reality (VR) in Automation
-- Internet of Things (IoT)
-- AI-Driven Chatbots and Virtual Assistants
-
+## Explore
+- [Projects](/projects/) — flagship maritime autonomy work and earlier robotics
+- [CV](/cv/) — full experience, skills, and education
+- [Publications](/publications/) — peer-reviewed research ([Google Scholar](https://scholar.google.com/citations?hl=en&user=HZOlOZIAAAAJ))
 
 ## Contact
-* Email: HesamJafarian@gmail.com
-* Address: Espoo, Finland
+- LinkedIn: [hesam-jafarian](https://www.linkedin.com/in/hesam-jafarian)
+- Location: Finland

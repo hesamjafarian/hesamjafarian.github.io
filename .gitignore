@@ -11,3 +11,10 @@ Gemfile.lock
 # Ingore files created by npm
 node_modules
 package-lock.json
+
+# Local source files & previews — never publish (contain personal/sensitive data)
+/Hesam_Jafarian_CV_NestAi.docx
+/Hesam_Jafarian_CV_NestAi.docx.pdf
+/Copy of Geometric Minimalist Pitch Deck.pdf
+/Copy of Geometric Minimalist Pitch Deck.zip
+/_preview_*.html
