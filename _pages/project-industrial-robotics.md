@@ -18,6 +18,7 @@ I model complete industrial work cells — for example, multi-robot automotive l
 
 ### Learning-based, interpretable collision detection
 Classical collision detection recomputes scene geometry at every step — the main bottleneck for real-time, collision-free path planning. I replace those expensive checks with data-driven models that approximate the collision space:
+
 - A Natural Gradient Boosting (NGBoost) model trained on ~300,000 UR5 joint-space samples raised collision-checking throughput from ~625 to ~938,000 checks per minute — about a 1000× speed-up — with calibrated, probabilistic outputs suited to sampling-based planners.
 - Shallow artificial neural-network topologies that collapse the collision pipeline into a compact, fast predictor.
 - Rule-based, interpretable models that make each collision decision explainable rather than a black box.
