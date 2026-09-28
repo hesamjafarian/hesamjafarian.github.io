@@ -12,8 +12,6 @@ author_profile: true
 A concurrent, multi-agent simulation in which two autonomous boats operate at the same time, each independently navigating to a sequence of target points (waypoints and buoys) on the water. Every boat is remote-controlled over its own dedicated socket, senses the target points through an onboard object-filter sensor, and is steered in real time by Python control logic — a compact model of a cooperative swarm reaching distributed goals.
 <div style="text-align: center;"><img src="/images/ailivesim-swarm/swarm-waypoints-overview.jpg" alt="Aerial view of the simulated harbour with target waypoints and buoys" style="width:100%; max-width:760px; height:auto;"></div>
 
-Within this simulation environment I generate photorealistic, physically-based multi-sensor data — RGB/EO and thermal/IR cameras, LiDAR, radar, GNSS, and AIS — and build large, automatically-labelled synthetic datasets with domain randomization across weather, lighting, and sea state. This supports scenario and rare-edge-case testing, anti-collision and situational-awareness development, and sim-to-real validation before deployment on real vessels.
-
 ### Scenario setup in the situation editor
 In the situation editor I place the mission elements: the target points — waypoints and coloured buoys — that the boats must reach, and the two boats themselves (small motorboats added as "Ego" vehicles). Each boat entry references its own control-socket profile and sensor-configuration profile, so the two craft are driven and sensed independently.
 <div style="text-align: center;"><img src="/images/ailivesim-swarm/situation-editor-placers.jpg" alt="Situation editor with waypoint and buoy placers for each boat" style="width:100%; max-width:760px; height:auto;"></div>
