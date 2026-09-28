@@ -7,43 +7,18 @@ author_profile: true
 
 [← Back to Projects](/projects/)
 
-As a member of the MRL Small Size League team, I worked on a high-speed autonomous multi-robot system designed for RoboCup soccer. The objective of the platform was to coordinate a team of small mobile robots in a highly dynamic environment where perception, decision-making, communication, and motion control all had to operate in real time.
+I worked on a high-speed autonomous multi-robot platform for RoboCup, where several omni-directional robots had to perceive the field, coordinate as a team, avoid obstacles, and react to a fast-changing game in real time. The project combined computer vision, multi-agent decision-making, path planning, wireless communication, embedded control, and simulation in one complete robotic system.
 
-A key part of the system was the overhead vision architecture. Cameras mounted above the playing field provided a global view of the robots, opponents, and ball. The vision system converted these images into field coordinates, allowing the central computer to continuously estimate positions, orientations, and movement across the entire game area. This centralized perception concept is characteristic of the RoboCup Small Size League, where field objects are tracked by an overhead vision system and the resulting information is processed by off-field computers.
-<div style="text-align: center;"><img src="/images/robocup2010_mrl.jpg" alt="MRL at RoboCup 2010" style="width:100%; max-width:600px; height:auto;"></div>
+A set of overhead cameras provided a global view of the field, tracking the robots, opponents, and ball. The vision system converted these observations into field coordinates and continuously estimated position, orientation, velocity, and movement. This shared world model was then used by the central computer for role assignment, tactical decisions, path planning, and coordinated team behaviour.
+<div style="text-align: center;"><img src="/images/ssl-simulation.jpg" alt="Simulation of the Small Size League field with a team of omni-directional robots" style="width:100%; max-width:700px; height:auto;"></div>
+<p style="text-align: center; font-size: 0.85em; color: #888;"><em>Simulation of the Small Size League field, used to develop and test the team.</em></p>
 
-The central computer used this global state to run the team AI, including tactical decision-making, role assignment, path planning, obstacle avoidance, and multi-robot coordination. Based on the current game situation, motion commands were generated for each robot and transmitted wirelessly to the team. This architecture allows several robots to behave as a coordinated system rather than as independent units, which is one of the main research challenges of the Small Size League.
+At the robot level, the platform used ARM processing together with an Altera Cyclone FPGA. The FPGA handled timing-critical tasks such as motor control and PID execution, while the higher-level control and communication were managed by the embedded processor. Commands were transmitted wirelessly to the robots at roughly 60 updates per second, allowing the team to react quickly to changes in the field.
+<div style="text-align: center;"><img src="/images/ssl-robot.png" alt="An omni-directional Small Size League robot with FPGA/ARM electronics" style="width:100%; max-width:480px; height:auto;"></div>
+<p style="text-align: center; font-size: 0.85em; color: #888;"><em>One of the omni-directional robots (FPGA/ARM electronics).</em></p>
 
-A simulation of the Small Size League environment supported development and testing of team strategy, multi-robot coordination, and control before running on the physical robots. It models the field, goals, ball, and the full team of omni-directional robots, allowing tactics and behaviors to be evaluated in a repeatable virtual setting.
-<div style="text-align: center;"><img src="/images/ssl-simulation.jpg" alt="Simulation of the Small Size League field with the MRL team of omni-directional robots" style="width:100%; max-width:700px; height:auto;"></div>
+A simulation environment was also used to develop and test strategy, coordination, obstacle avoidance, and control before running new behaviours on the physical robots. This made it possible to reproduce game situations, refine algorithms, and reduce development time on the real platform.
 
-At the robot level, the work focused on real-time sensing, motion control, and distributed hardware/software integration. The electronics combined an ARM processor with an Altera Cyclone FPGA, with computationally parallel and timing-critical tasks such as motor control and PID execution handled at the FPGA level. The 2010 redesign centered on an ARM-plus-FPGA architecture and a new wireless system for the low-level robot platform.
-<div style="text-align: center;"><img src="/images/mrl_robot.png" alt="MRL Small Size League robot" style="width:100%; max-width:480px; height:auto;"></div>
-
-The overall control loop can be summarized as:
-
-> Overhead cameras → global object localization → team AI and strategy → path and motion generation → wireless robot commands → FPGA/ARM motor control → robot motion
-
-This created a fast closed-loop autonomous system capable of continuously observing the environment, deciding how the team should react, and executing coordinated movement across multiple robots.
-
-### Main objectives
-
-- Real-time localization of robots and the ball using overhead cameras
-- Centralized world-state estimation from global visual information
-- Multi-agent strategy and coordinated team behavior
-- Dynamic path planning and obstacle avoidance
-- High-frequency wireless command distribution
-- Precise omni-directional motion and motor control
-- FPGA-based execution of time-critical control tasks
-- Integration of perception, AI, communications, electronics, and mechanics into a complete autonomous robotic system
-
-The broader goal was not simply to build soccer-playing robots, but to investigate how multiple autonomous agents can perceive a shared environment, coordinate decisions, communicate efficiently, and execute precise motion under strict real-time constraints.
-
-MRL placed 1st at the national RoboCup and 3rd at the RoboCup 2010 world championship:
-
-| Place | Team |
-|:-----:|------|
-| 1 | Skuba |
-| 2 | CMDragons |
-| 3 | MRL |
-| 4 | KIKS |
+The project gave me hands-on experience with the full autonomous robotics stack, from perception and world modelling to multi-robot coordination, embedded control, and physical execution. The team placed 1st in the national RoboCup competition and 3rd in the RoboCup 2010 Small Size League world championship.
+<div style="text-align: center;"><img src="/images/robocup2010.jpg" alt="At the RoboCup 2010 Small Size League world championship" style="width:100%; max-width:600px; height:auto;"></div>
+<p style="text-align: center; font-size: 0.85em; color: #888;"><em>At the RoboCup 2010 world championship.</em></p>
