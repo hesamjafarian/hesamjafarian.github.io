@@ -35,7 +35,7 @@ This allows a vessel to be followed across multiple viewpoints instead of treati
 <div style="text-align: center;"><img src="/images/maritime/multi-view-real-environment.jpg" alt="Real-environment multi-view detection with AIS explorer tracks (Ports of Shimonoseki and Moji)" style="width:100%; max-width:900px; height:auto;"></div>
 
 ### Helsinki Port Case Study
-As a real-world example, the framework was applied to the Port of Helsinki (West Harbour) using public harbour cameras. The same vessel is detected simultaneously from two viewpoints — the north and south harbour cameras — and localized on the harbour map, demonstrating cross-camera association and consistent vessel identity across overlapping fields of view in a live port environment.
+As a real-world example, the framework was applied to the Port of Helsinki (West Harbour) using public harbour cameras. The same vessel is detected simultaneously from two viewpoints, the north and south harbour cameras, and localized on the harbour map, demonstrating cross-camera association and consistent vessel identity across overlapping fields of view in a live port environment.
 <div style="text-align: center;"><img src="/images/maritime/helsinki-port-case-study.jpg" alt="Port of Helsinki West Harbour: the same vessel detected from the north and south cameras and localized on the map" style="width:100%; max-width:900px; height:auto;"></div>
 
 ### AIS Modality Loss and Anomaly Monitoring

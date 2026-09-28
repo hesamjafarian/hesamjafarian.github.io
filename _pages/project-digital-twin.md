@@ -118,8 +118,6 @@ The digital twin also enables structured validation rather than relying only on 
 - Does the same algorithm behave consistently in simulation and on the real vessel?
 
 ### Closed Development and Validation Loop
-Together, the real vessel and digital twin form a continuous development loop:
-
-> Real vessel → telemetry and sensor data → digital twin → scenario generation and testing → algorithm validation → real-vessel deployment
+Together, the real vessel and its digital twin form a continuous development loop. Telemetry and sensor data gathered on the water feed the twin, where scenarios are generated and algorithms are tested and validated, and the proven changes are deployed back to the vessel for the next round of field testing.
 
 This allows issues discovered during field testing to be reproduced in simulation, analysed, corrected, and retested before returning to the water. The result is a safer and more efficient development process for maritime autonomy, perception, navigation, situational awareness, and remote-operation systems.

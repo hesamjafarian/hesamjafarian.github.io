@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-A selection of my work in autonomous systems — from the maritime autonomy stack I currently lead, through industrial robotics and interpretable AI, to the platforms where I started in real-time robotics.
+A selection of my work in autonomous systems, from the maritime autonomy stack I currently lead, through industrial robotics and interpretable AI, to the platforms where I started in real-time robotics.
 
 <style>
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:26px 0 12px;}

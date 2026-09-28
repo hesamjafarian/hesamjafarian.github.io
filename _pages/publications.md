@@ -16,7 +16,7 @@ My research spans machine learning for autonomous systems, interpretable AI for 
 
 ## Conference & Workshop Papers
 
-- Jafarian, H., Zare, M., Ayanoglu, U., Kalliovaara, J., Paavola, J. (2026). *Rule-Based Interpretable AI for Concurrent Collision Detection in Industrial Robot Manipulators.* AHFE — Human Factors in Robots, Drones and Unmanned Systems.
+- Jafarian, H., Zare, M., Ayanoglu, U., Kalliovaara, J., Paavola, J. (2026). *Rule-Based Interpretable AI for Concurrent Collision Detection in Industrial Robot Manipulators.* AHFE, Human Factors in Robots, Drones and Unmanned Systems.
 - Zare, M., Visa, A., Pärssinen, V., Jafarian, H., Oksman, H., Aha, L. (2020). *Real-Time Manufacturing Drilling Operations Analysis by Utilization of Data Fusion.* IEEE 23rd International Conference on Information Fusion (FUSION), 1–6.
 - Jafarian, H., Zare, M., Pieters, R., Mehrang, S., Visa, A. (2021). *Natural Gradient Boosting Collision Detection in Robot Manipulators.* Robotics: Science and Systems (RSS) Workshop.
 - Zare, M., Lehtinen, J.P., Jafarian, H., Visa, A., Aha, L. (2021). *Drilling Operations Classification Utilizing Data Fusion and Machine Learning Techniques.* International Conference on Engineering Applications of Neural Networks (EANN), 389–398.

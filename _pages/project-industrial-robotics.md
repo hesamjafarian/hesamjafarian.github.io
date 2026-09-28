@@ -44,15 +44,13 @@ The probabilistic output also provides information about uncertainty, which is u
 ### Interpretable robot safety models
 Another part of the work focused on making learned collision models easier to understand.
 <div style="text-align: center;"><img src="/images/industrial-robotics/interpretable-collision-demo.png" alt="Interpretable collision-detection demo: collision (red) vs clear (blue) states" style="width:100%; max-width:720px; height:auto;"></div>
-<p style="text-align: center; font-size: 0.85em; color: #888;"><em>Interpretable collision detection — collision (red) vs clear (blue) states.</em></p>
+<p style="text-align: center; font-size: 0.85em; color: #888;"><em>Interpretable collision detection, collision (red) vs clear (blue) states.</em></p>
 
 I explored shallow neural networks and rule-based models that can approximate the robot collision space while still providing insight into why a particular configuration is considered safe or unsafe. This is especially valuable in industrial robotics, where model transparency and predictable behaviour are important for safety analysis and engineering validation.
 
 ### Simulation-driven development
-The overall workflow combines simulation, geometry, and machine learning:
-
-> Digital twin → robot configuration generation → geometric collision checking → collision dataset → learned collision model → path-planning evaluation
+The overall workflow brings simulation, geometry, and machine learning together. A digital twin generates large numbers of robot configurations, each one checked geometrically for collisions to build a labelled dataset. That dataset trains a learned collision model, which is then evaluated inside path planning.
 
 The same simulation environment can be used to test new cell layouts, robot configurations, tools, obstacles, and planning strategies without risking physical equipment or interrupting production.
 
-The robot models and collision datasets were developed through the Simulbotics robotics simulation platform. The work has also contributed to publications in robotics, simulation, and intelligent manufacturing — see [Publications](/publications/).
+The robot models and collision datasets were developed through the Simulbotics robotics simulation platform. The work has also contributed to publications in robotics, simulation, and intelligent manufacturing, see [Publications](/publications/).

@@ -18,9 +18,7 @@ The monitoring concept uses several cameras with partially overlapping fields of
 
 Within each camera view, vessels can be detected and tracked over time. When a vessel approaches the boundary of one camera's coverage and enters another, cross-camera association can be used to determine that both observations correspond to the same vessel. This makes it possible to maintain a continuous vessel track across a much larger area.
 
-A typical monitoring flow becomes:
-
-> Vessel detection → local camera tracking → cross-camera association → continuous vessel identity → trajectory monitoring → event or anomaly awareness
+Put together, monitoring begins by detecting and tracking a vessel within one camera, then links its appearances across neighbouring cameras into a single persistent identity. That continuous track is used to follow the vessel's trajectory and to flag unusual movement or events as they develop.
 
 The multi-view approach is particularly useful around large infrastructure because structures themselves can create occlusions. A vessel hidden behind part of a bridge or outside the viewing angle of one camera may still be observable from another viewpoint.
 
